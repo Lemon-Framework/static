@@ -25,7 +25,7 @@ $hint = 'Did you mean $parek?';
 </head>
 <body class='bg-primary text-secondary'>
     <div id="app">
-        <div class="container p-5 mx-auto">
+        <div class="container px-3 py-5 mx-auto sm:px-0">
             <div class="block p-3 shadow-xl bg-red text-primary">
                 <div class="text-xl"><?= $problem ?> - <?= $file ?>:<?= $line ?></div>
                 <div class="text-2xl"><?= $message ?></div>

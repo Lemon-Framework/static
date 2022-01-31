@@ -1,18 +1,21 @@
 <template>
     <div>
         <bar></bar>
-        <!--component :is='component'></component-->
+        <component :is='component'></component>
     </div>
 </template>
 
-<script lang='ls'>
-require! {
-    './Bar.vue'
-}
-module.exports = 
-    data: ->
-        component: null
+<script lang='coffee' type="text/coffeescript">
+
+import Bar from './Bar.vue'
+import Trace from './Trace/Trace.vue'
+
+main = 
     components:
-        'bar': Bar
+        bar: Bar
+    data: ->
+        component: Trace 
+
+export default main
 
 </script>
