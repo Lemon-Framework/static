@@ -11,10 +11,11 @@ $hint = 'Did you mean $parek?';
     <meta charset="UTF-8">
     <title>Exception | Lemon</title>
     <style>
+/*
         @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
         * {
             font-family: 'Source Code Pro', monospace;
-        }
+        }*/
         :root {
             --primary: #282828;
             --secondary: #A29783;
@@ -37,9 +38,10 @@ $hint = 'Did you mean $parek?';
 </body>
 <script>
 let context = {
-    'trace': [
-        
-    ]
+    'error': 'index.php',
+    'trace': {
+        'index.php': '<\?php echo \'cs\';'
+    }
 }
 </script>
 <script src="dist/js/app.js"></script>

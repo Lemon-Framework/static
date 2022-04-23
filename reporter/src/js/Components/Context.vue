@@ -1,7 +1,9 @@
 <template>
     <div>
         <bar></bar>
-        <component :is='component'></component>
+        <div class="py-3">
+            <component :is='component'></component>
+        </div>
     </div>
 </template>
 
