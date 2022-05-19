@@ -1,0 +1,77 @@
+/* TODO */
+
+.hljs code {
+    color: #ebdbb2
+}
+
+.hljs-link,
+.hljs-emphasis,
+.hljs-attribute,
+.hljs-addition {
+  color: #689d6a;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong,
+.hljs-string,
+.hljs-deletion {
+  color: #98971a;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+.hljs-quote,
+.hljs-comment {
+  color: #928374;
+}
+
+.hljs-title,
+.hljs-title.class_ {
+  color: #ebdbb2
+}
+
+
+.hljs-type {
+  color: #d79921;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #458588;
+}
+
+.hljs-bullet {
+  color: #997700;
+}
+
+.hljs-meta {
+  color: #d65d0e;
+}
+
+.hljs-code,
+.hljs-number,
+.hljs-literal,
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #d16286;
+}
+
+.hljs-regexp {
+  color: #98971a;
+}
+
+.hljs-symbol {
+  color: #ebdbb2;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #689d6a;
+}

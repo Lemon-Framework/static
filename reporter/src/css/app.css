@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hljs {
+    white-space: pre-wrap;
+    counter-set: lines var(--start);
+}
+
+.hljs code {
+    counter-increment: lines;
+}
+
+.hljs code::before {
+    content: counter(lines) ' ';
+    @apply text-middark; 
+    display: inline-block;
+    text-align: right;
+    width: 3rem;
+}
+
+.reporter-error::before {
+    content: '>>' counter(lines) ' '!important;
+    @apply text-red !important;
+}

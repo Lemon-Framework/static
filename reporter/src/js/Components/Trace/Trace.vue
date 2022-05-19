@@ -1,31 +1,39 @@
 <template>
-    <div class="grid h-screen gap-3 grid-flow-col">
-        <div class="border-2 border-secondary block">
+    <div class="h-screen grid gap-3 grid-cols-5">
+        <div class="block border-2 border-secondary">
             <div 
-                v-for="(code, file) in trace" 
-                class='p-2'
-                v-on:click="show(code)"
+                v-for="(item, index) in trace" 
+                v-on:click="show(item)"
+                v-bind:key="index"
+                :class="item == current ? 'bg-secondary text-primary' : ''"
             >
-                {{ file }}
+                <div class="p-2">{{ item.file }}</div>
                 <hr> 
             </div>
         </div>
-        <div class="border-2 border-secondary col-span-5">
-            {{ code }}
+        <div class="border-2 border-secondary col-span-4">
+            <editor></editor>
         </div>
         </div>
 </template>
 
-<script lang="coffee">
+<script>
+import Editor from './Editor.vue'
 
-main = 
-    data: ->
-        trace: context['trace']
-        code: context['trace'][context['error']]
-    methods:
-        show: (code) ->
-            @code = code
-
-export default main
-
+export default {
+    components: {
+        Editor
+    },
+    data() {
+        return {
+            trace: context['trace'],
+            current: context['trace'][0]
+        }
+    },
+    methods: {
+        show(current) {
+            this.current = current
+        }
+    }
+}
 </script>

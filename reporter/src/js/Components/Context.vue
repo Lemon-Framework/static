@@ -7,17 +7,18 @@
     </div>
 </template>
 
-<script lang='coffee' type="text/coffeescript">
-
+<script>
 import Bar from './Bar.vue'
 import Trace from './Trace/Trace.vue'
 
-main = 
-    components:
-        bar: Bar
-    data: ->
-        component: Trace 
-
-export default main
-
+export default {
+    components: {
+        Bar
+    },
+    data() {
+        return {
+            component: Trace
+        }
+    }
+}
 </script>

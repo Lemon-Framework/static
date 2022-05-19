@@ -4,7 +4,8 @@ module.exports = {
     colors: {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
-        red: 'var(--red)'
+        middark: 'var(--mid-dark)',
+        red: 'var(--red)',
     }
   },
   plugins: [],
