@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-5 border-2 shadow-xl grid-cols-4 grid border-secondary">
+    <div class="mt-5 border-2 shadow-xl grid-cols-3 grid border-secondary">
         <div 
             class="p-2 hover:bg-secondary hover:text-primary" 
             v-for="(component, name) in tabs" 
@@ -15,15 +15,16 @@
 
 <script>
 import Trace from './Trace/Trace.vue'
+import Hints from './Hints/Hints.vue'
+import Request from './Request/Request.vue'
 
 export default {
     data() { 
         return {
             tabs: {
-                trace: Trace,
-                hints: null,
-                request: null,
-                routes: null,
+                Trace: Trace,
+                Hints: Hints,
+                Request: Request,
             }
         }
     },

@@ -467,6 +467,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-5 {
   margin-top: 1.25rem;
 }
+.mt-1 {
+  margin-top: 0.25rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .block {
   display: block;
 }
@@ -488,14 +494,23 @@ Ensure the default browser behavior of the `hidden` attribute.
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 .gap-3 {
   gap: 0.75rem;
 }
 .border-2 {
   border-width: 2px;
 }
+.border {
+  border-width: 1px;
+}
 .border-secondary {
   border-color: var(--secondary);
+}
+.border-primary {
+  border-color: var(--primary);
 }
 .bg-primary {
   background-color: var(--primary);

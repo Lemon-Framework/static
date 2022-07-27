@@ -1,4 +1,8 @@
 <?php
+
+// FOR TESTING
+
+
 $problem = 'Exception';
 $message = 'Undefined variable $parke';
 $line = 37;
@@ -40,6 +44,20 @@ $hint = 'Did you mean $parek?';
 <script>
 let context = {
     'error': 'index.php',
+    'hints': [
+        'Try checking that variable $parke actually exist in yout scope.',
+        'Try https://stackoverflow.com/questions/4261133/notice-undefined-variable-notice-undefined-index-warning-undefined-arr/4261200#4261200',
+        'Nejaka husta vec'
+    ],
+    'request': {
+        'path': '/',
+        'query': 'foo=bar',
+        'method': 'post',
+        'headers': {
+            'content-type': 'text/json'
+        },
+        'body': 'parek'
+    },
     'trace': [
         {file: 'index.php', code: '<\?php echo \'cs\';', line: 1},
         {file: 'parek.php', code: '<\?php\ne\nc\np\nc\na\na\na\na\na\na\na\na\na\na\na\na;', line: 2},
